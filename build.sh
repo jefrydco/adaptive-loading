@@ -2,6 +2,7 @@
 multipleBuildsPath="../functions/builds/"
 individualBuildAllFiles="build/*"
 
+# for PROJECT in vue-movie-network-aware-loading
 for PROJECT in  cra-battery-considerate-loading \
                 cra-device-class-aware-code-splitting \
                 cra-memory-considerate-loading \
@@ -12,6 +13,7 @@ for PROJECT in  cra-battery-considerate-loading \
                 cra-network-aware-data-fetching \
                 cra-ua-aware-code-splitting \
                 react-movie-network-aware-loading \
+                vue-movie-network-aware-loading \
                 react-shrine-network-aware-code-splitting \
                 node-dpr-aware-loading \
                 node-network-memory-considerate-loading \
@@ -30,8 +32,8 @@ do
     cd $PROJECT
 
     rm -rf node_modules build
-    npm install
-    npm run build
+    yarn
+    yarn build
 
     mkdir -p "${multipleBuildsPath}${PROJECT}"
     cp -r $individualBuildAllFiles "${multipleBuildsPath}${PROJECT}"
