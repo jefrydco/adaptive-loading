@@ -8,13 +8,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "next": "npm run build-firebase && npm install && npm run dev",
-    "preserve": "npm run build-all",
+    "next": "yarn build-firebase && npm install && yarn dev",
+    "preserve": "yarn build-all",
     "serve": "firebase serve",
-    "predeploy": "npm run build-all",
+    "predeploy": "yarn build-all",
     "deploy": "firebase deploy",
-    "build-all": "npm run build-next && npm run build-firebase",
-    "build-next": "npm install && npm run build",
+    "build-all": "yarn build-next && yarn build-firebase",
+    "build-next": "npm install && yarn build",
     "build-firebase": "cd \"functions\" && npm install"
   },
   "dependencies": {

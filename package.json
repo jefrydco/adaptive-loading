@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "cd functions && npm run serve",
-    "deploy": "cd functions && npm run deploy",
-    "log-functions": "cd functions && npm run logs",
+    "serve": "cd functions && yarn serve",
+    "deploy": "cd functions && yarn deploy",
+    "log-functions": "cd functions && yarn logs",
     "clean": "chmod u+x clean.sh && bash clean.sh",
-    "build": "chmod u+x build.sh && bash build.sh && cd functions && npm install"
+    "build": "chmod u+x build.sh && bash build.sh && cd functions && yarn --ignore-engines"
   },
   "keywords": [],
   "author": "",

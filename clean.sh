@@ -2,6 +2,7 @@
 multipleBuildsPath="../functions/builds/"
 individualBuildAllFiles="build/*"
 
+# for PROJECT in vue-movie-network-aware-loading
 for PROJECT in  functions \
                 cra-battery-considerate-loading \
                 cra-device-class-aware-code-splitting \
@@ -13,6 +14,7 @@ for PROJECT in  functions \
                 cra-network-aware-data-fetching \
                 cra-ua-aware-code-splitting \
                 react-movie-network-aware-loading \
+                vue-movie-network-aware-loading \
                 react-shrine-network-aware-code-splitting \
                 node-dpr-aware-loading \
                 node-network-memory-considerate-loading \
