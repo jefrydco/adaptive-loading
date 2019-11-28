@@ -26,7 +26,8 @@ for PROJECT in  cra-battery-considerate-loading \
                 react-lottie-network-aware-loading \
                 react-youtube-adaptive-loading \
                 "react-twitter-save-data-loading(client-hint)" \
-                "react-twitter-save-data-loading(hook)"
+                "react-twitter-save-data-loading(hook)" \
+                "vue-twitter-save-data-loading(component)"
 do
     echo "Start building ${PROJECT}..."
     cd $PROJECT
