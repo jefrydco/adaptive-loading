@@ -44,6 +44,7 @@ This repo contains several different pieces for the Adaptive Loading project: Re
 
 npm run build
 npm run deploy
+```
 
 ## Team
 
