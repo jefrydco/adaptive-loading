@@ -27,7 +27,8 @@ for PROJECT in  functions \
                 microsite \
                 cna-memory-considerate-animation \
                 "react-twitter-save-data-loading(client-hint)" \
-                "react-twitter-save-data-loading(hook)"
+                "react-twitter-save-data-loading(hook)" \
+                "vue-twitter-save-data-loading(component)"
 do
     echo "Start cleanup of ${PROJECT}..."
     cd $PROJECT

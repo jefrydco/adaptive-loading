@@ -26,7 +26,8 @@ for PROJECT in  cra-battery-considerate-loading \
                 microsite \
                 cna-memory-considerate-animation \
                 "react-twitter-save-data-loading(client-hint)" \
-                "react-twitter-save-data-loading(hook)"
+                "react-twitter-save-data-loading(hook)" \
+                "vue-twitter-save-data-loading(component)"
 do
     echo "Start building ${PROJECT}..."
     cd $PROJECT
