@@ -30,15 +30,15 @@ const MemoryStatus = ({ memoryStatus }) => {
   const memoryStatusList = [
     {
       label: 'Total JSHeapSize',
-      value: `${totalJSHeapSize} (Byte)`
+      value: `${(totalJSHeapSize * 1e-6).toFixed(2)} (Mb)`
     },
     {
       label: 'Used JSHeapSize',
-      value: `${usedJSHeapSize} (Byte)`
+      value: `${(usedJSHeapSize * 1e-6).toFixed(2)} (Mb)`
     },
     {
       label: 'JSHeapSizeLimit',
-      value: `${jsHeapSizeLimit} (Byte)`
+      value: `${(jsHeapSizeLimit * 1e-9).toFixed(2)} (GB)`
     },
     {
       label: 'Device Memory',
