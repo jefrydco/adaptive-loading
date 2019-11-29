@@ -27,18 +27,26 @@ This repo contains several different pieces for the Adaptive Loading project: Re
 
 ### Data Saver-style patterns
 
+#### React
 - [React Twitter - save-data loading based on Client Hint](<https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-twitter-save-data-loading(client-hint)>) ([demo](<https://adaptive-loading.web.app/react-twitter-save-data-loading(client-hint)/>), [WPT](https://www.webpagetest.org/video/compare.php?tests=191102_3G_8572f4d652ca8a61fe2750ba7023055d,191102_P6_4062cbe8770d5dc462b327c3c814fc11))
 - [React Twitter - save-data loading based on Hook](<https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-twitter-save-data-loading(hook)>) ([demo](<https://adaptive-loading.web.app/react-twitter-save-data-loading(hook)/>))
+
+#### Vue
 - [Vue Twitter - save-data loading based on Component](<https://github.com/jefrydco/vue-adaptive-loading/tree/master/vue-twitter-save-data-loading(component)>) ([demo](<https://vue-adaptive-loading.web.app/vue-twitter-save-data-loading(component)/>))
 
 ### Full applications
 
-* [React Movie - network-aware loading](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-movie-network-aware-loading) ([demo](https://adaptive-loading.web.app/react-movie-network-aware-loading/))
-* [React Shrine - network-aware code-splitting](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-shrine-network-aware-code-splitting) ([demo](https://adaptive-loading.web.app/react-shrine-network-aware-code-splitting/))
-* [React eBay - network-aware code-splitting](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-ebay-network-aware-code-splitting) ([demo](https://adaptive-loading.web.app/react-ebay-network-aware-code-splitting/))
-* [React Dixie Mesh - memory considerate loading](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-dixie-memory-considerate-loading) ([demo](https://adaptive-loading.web.app/react-dixie-memory-considerate-loading/))
-* [React Lottie - network-aware loading](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-lottie-network-aware-loading) ([demo](https://adaptive-loading.web.app/react-lottie-network-aware-loading/))
-* [React Youtube - adaptive loading with mix of network, memory and hardware concurrency](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-youtube-adaptive-loading) ([demo](https://adaptive-loading.web.app/react-youtube-adaptive-loading/))
+#### React
+- [React Movie - network-aware loading](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-movie-network-aware-loading) ([demo](https://adaptive-loading.web.app/react-movie-network-aware-loading/))
+- [React Shrine - network-aware code-splitting](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-shrine-network-aware-code-splitting) ([demo](https://adaptive-loading.web.app/react-shrine-network-aware-code-splitting/))
+- [React eBay - network-aware code-splitting](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-ebay-network-aware-code-splitting) ([demo](https://adaptive-loading.web.app/react-ebay-network-aware-code-splitting/))
+- [React Dixie Mesh - memory considerate loading](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-dixie-memory-considerate-loading) ([demo](https://adaptive-loading.web.app/react-dixie-memory-considerate-loading/))
+- [React Lottie - network-aware loading](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-lottie-network-aware-loading) ([demo](https://adaptive-loading.web.app/react-lottie-network-aware-loading/))
+- [React Youtube - adaptive loading with mix of network, memory and hardware concurrency](https://github.com/GoogleChromeLabs/adaptive-loading/tree/master/react-youtube-adaptive-loading) ([demo](https://adaptive-loading.web.app/react-youtube-adaptive-loading/))
+
+#### Vue
+- [Vue Movie - network-aware loading](https://github.com/jefrydco/vue-adaptive-loading/tree/master/vue-movie-network-aware-loading) ([demo](https://vue-adaptive-loading.web.app/vue-movie-network-aware-loading/))
+- [Vue Dixie Mesh - memory considerate loading](https://github.com/jefrydco/adaptive-loading/tree/master/vue-dixie-memory-considerate-loading) ([demo](https://vue-adaptive-loading.web.app/vue-dixie-memory-considerate-loading/))
 
 ## Deployment
 
