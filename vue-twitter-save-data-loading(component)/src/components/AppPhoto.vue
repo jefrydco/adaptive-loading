@@ -1,14 +1,14 @@
 <template>
   <div class="adaptive-media" :style="style().mediaStyle">
-    <div v-for="(medium, i) in media" :key="i" class="adaptive-media-photo-container" :style="style(medium.sizes).containStyle">
+    <div v-for="(medium, i) in media" :key="i" class="adaptive-media-photo-container" :style="style(medium.sizes, index).containStyle">
       <div v-if="isLight" class="adaptive-photo">
-        <img :src="photoPath" alt="photos" :style="style(medium.sizes).photoStyle">
+        <img :src="photoPath" alt="photos" :style="style(medium.sizes, index).photoStyle">
         <button class="load-image" @click="loadImageHandler">
           Load Image
         </button>
       </div>
       <div v-else="" class="adaptive-photo">
-        <img :src="photoPath" alt="photos" :style="style(medium.sizes).photoStyle">
+        <img :src="photoPath" alt="photos" :style="style(medium.sizes, index).photoStyle">
         <slot />
       </div>
     </div>
@@ -52,7 +52,7 @@ export default {
     loadImageHandler() {
       this.photoPath = this.media[0].media_url.replace(IMAGE_TYPE.LIGHT, IMAGE_TYPE.HEAVY)
     },
-    style(sizes) {
+    style(sizes, index) {
       const mediaStyle = {
         'display': 'inline-block',
         'maxHeight': '508px',
@@ -115,7 +115,7 @@ export default {
             photoStyle.width = '100%';
             photoStyle.height = 'auto';
           } else if (mediaWidth > (508 / 2)) {
-            const ratio = (100 / m.sizes.large.h) * 253;
+            const ratio = (100 / sizes.large.h) * 253;
             mediaWidth = mediaWidth * (ratio / 100);
             photoStyle.left = `${((508 / 2) - mediaWidth) / 2}px`;
           }
@@ -134,7 +134,7 @@ export default {
             const firstWrapWidth = 508 * (2 / 3);
             const ratio = (100 / mediaHeight) * 337;
             mediaWidth = mediaWidth * (ratio / 100);
-            const newRatio = (100 / m.sizes.medium.w) * firstWrapWidth;
+            const newRatio = (100 / sizes.medium.w) * firstWrapWidth;
             mediaHeight = mediaHeight * (newRatio / 100);
 
             if (mediaHeight > maxHeight) {
@@ -148,8 +148,8 @@ export default {
             }
           }
           if (index !== 0) {
-            mediaHeight = m.sizes.medium.h;
-            mediaWidth = m.sizes.medium.w;
+            mediaHeight = sizes.medium.h;
+            mediaWidth = sizes.medium.w;
             const maxHeight = 337 / 2;
             const maxWidth = 508 * 1/3;
             const ratio = (100 / mediaWidth) * maxWidth;
@@ -160,7 +160,7 @@ export default {
             } else if (mediaWidth > maxWidth) {
               photoStyle.width = 'auto';
               photoStyle.height = '100%';
-              const newRatio = (100 / m.sizes.medium.h) * maxWidth;
+              const newRatio = (100 / sizes.medium.h) * maxWidth;
               mediaWidth = mediaWidth * (newRatio / 100);
               photoStyle.left = `${(maxWidth - mediaWidth) / 2}px`;
             }
@@ -185,7 +185,7 @@ export default {
             const maxHeight = 380;
             const ratio = (100 / mediaHeight) * 380;
             mediaWidth = mediaWidth * (ratio / 100);
-            const newRatio = (100 / m.sizes.medium.w) * firstWrapWidth;
+            const newRatio = (100 / sizes.medium.w) * firstWrapWidth;
             mediaHeight = mediaHeight * (newRatio / 100);
 
             if (mediaHeight > maxHeight) {
@@ -199,8 +199,8 @@ export default {
             }
           }
           if (index !== 0) {
-            mediaHeight = m.sizes.medium.h;
-            mediaWidth = m.sizes.medium.w;
+            mediaHeight = sizes.medium.h;
+            mediaWidth = sizes.medium.w;
             const maxHeight = 380 / 3;
             const maxWidth = 508 * 1/4;
 
@@ -212,7 +212,7 @@ export default {
             } else if (mediaWidth > maxWidth) {
               photoStyle.width = 'auto';
               photoStyle.height = '100%';
-              const newRatio = (100 / m.sizes.medium.h) * maxWidth;
+              const newRatio = (100 / sizes.medium.h) * maxWidth;
               mediaWidth = mediaWidth * (newRatio / 100);
               photoStyle.left = `${(maxWidth - mediaWidth) / 2}px`;
             }
