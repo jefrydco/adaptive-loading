@@ -2,6 +2,9 @@
 multipleBuildsPath="../functions/builds/"
 individualBuildAllFiles="build/*"
 
+rm -rf .functions
+
+# for PROJECT in vue-movie-network-aware-loading
 for PROJECT in  cra-battery-considerate-loading \
                 cra-device-class-aware-code-splitting \
                 cra-memory-considerate-loading \

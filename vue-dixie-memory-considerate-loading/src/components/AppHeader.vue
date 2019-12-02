@@ -1,7 +1,7 @@
 <template>
   <div class='header'>
     <div class='bottom-left'>
-      <button class='menu-button'><img src="./icons/hamburger.svg" width='24' height='18' alt='hamburger menu' /></button>
+      <button class='menu-button'><img src="@/assets/icons/hamburger.svg" width='24' height='18' alt='hamburger menu' /></button>
       <nav class='header-nav'>
         <a href='/' class='header-nav-item'>Home</a>
         <a href='https://dixiemech.store/' class='header-nav-item'>Shop</a>
@@ -12,7 +12,7 @@
     </div>
     <div class='bottom-center'>
       <a href='https://dixiemech.com/gmkdracula/' class='header-branding'>
-        <img src="./images/logo.webp" alt='Dixie Mech' class='header-branding-logo' />
+        <img src="@/assets/images/logo.webp" alt='Dixie Mech' class='header-branding-logo' />
       </a>
     </div>
     <div class='bottom-right'>
@@ -27,18 +27,7 @@
 </template>
 
 <script>
-export default {
-  props: {
-    hamburger: {
-      type: String,
-      default: ""
-    },
-    logo: {
-      type: String,
-      default: ""
-    }
-  }
-}
+export default {}
 </script>
 
 <style>

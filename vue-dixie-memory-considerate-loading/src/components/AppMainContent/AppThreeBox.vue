@@ -1,7 +1,7 @@
 <template>
   <model-viewer
     preload
-    poster="/images/poster-keyboard.webp"
+    poster="/vue-dixie-memory-considerate-loading/images/poster-keyboard.webp"
     src="https://ephektz.com/assets/dboard.glb"
     alt="A 3D model of a keyboard"
     background-color="#2b2b2b"
@@ -19,7 +19,11 @@
 <script>
 import "@google/model-viewer"
 
-export default {}
+export default {
+  data() {
+    return {}
+  }
+}
 </script>
 
 <style>

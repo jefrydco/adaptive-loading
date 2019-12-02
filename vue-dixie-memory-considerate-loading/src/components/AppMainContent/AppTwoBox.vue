@@ -1,6 +1,6 @@
 <template>
   <div class="two-box">
-    <img src="/images/static-keyboard.webp" alt="black mechanical keyboard" width="100%">
+    <img src="@/assets/images/static-keyboard.webp" alt="black mechanical keyboard" width="100%">
   </div>
 </template>
 
