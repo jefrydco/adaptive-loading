@@ -25,3 +25,6 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 /react-youtube-adaptive-loading/.env
+
+package-lock.json
+yarn.lock
