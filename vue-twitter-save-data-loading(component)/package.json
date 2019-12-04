@@ -14,7 +14,7 @@
     "twemoji": "^12.1.4",
     "twitter-text": "^3.0.1",
     "vue": "^2.6.10",
-    "vue-adaptive-components": "^0.0.4",
+    "vue-adaptive-components": "^0.0.5",
     "vue-js-toggle-button": "^1.3.3",
     "vue-virtual-scroller": "^1.0.0-rc.2"
   },
